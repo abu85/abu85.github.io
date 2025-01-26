@@ -1,46 +1,50 @@
-project:
-  type: website
 
-website:
-  title: "Advanced illustration options"
-  sidebar:
-    style: "docked"
-    search: true
-    contents:
-      - text: "How to contribute"
-        href: index.qmd
-      - section: "combine plots with patchwork"
-        contents:
-          - ggplot_patchwork.qmd
-      - section: "pngs in plots"
-        contents:
-          - images_in_R_plots.qmd
-      - section: "maps in quarto"
-        contents:
-          - quarto_maps.qmd  
-      - section: "interactive graphs"
-        contents: 
-          - interactive_graphs.qmd
-      - section: "genome visualization"
-        contents:
-          - genome_visualization.qmd
-        
+# Advanced plots in R
 
-format: 
-  html:
-    code-fold: true
-    code-summary: "Click here to show the code"
-    code-tools: true
-    theme: 
-      - solar
-    self-contained: true
-    page-layout: full
-    toc: true
-    toc-depth: 3
-    css: styles.css
-    include-in-header:
-      - file: github-corner.html
-# engine: knitr
+In the following we give you some more options on how to make your plots even nicer. 
 
-execute:
-  freeze: auto
+You are invited to add your own chapters, if you have tips and tricks for your fellow students - this will also train your git!
+
+# How to contribute: 
+
+## Fork this repository
+
+- click the waving octocat in the top right corner, she will bring you to the repository on Github.
+- fork this repository into your own account (click in the fork/triton symbol that says "fork", and follow the instructions). 
+
+## Clone your copy to the local computer
+
+- clone the repository to your local computer (click on the green "Code" button, choose "local" and "SSH", then enter the copied url to a new project in Rstudio). 
+
+## Add the part you want to add
+
+- add a new .qmd file with a descriptive name
+- add the .qmd file to the _quuarto.yml file
+- make changes to the .qmd file
+- test the render of the homepage
+- stage the changes, commit them, push them to Github.
+
+## Make a pull request
+
+This is to ask me to add your code to the repository. 
+
+- click on "Contribute"
+- click on "Open pull request"
+- towards the top there will be a section "Compare changes" that says "Choose two branches to see what’s changed or to start a new pull request."
+- on the left, choose the amrei-bp repository, and change the "base" to "new_features"
+- fill in the information about your new feature and
+- "Create pull request"
+
+## Wait for me to give you feedback or approve your changes
+
+- you will get a message in your e-mail when I do
+
+## Sync your fork
+
+Make sure you copy of my repository is up to date. 
+
+- click on "Sync fork"
+
+## Pull the changes to your local repository
+
+- in Rstudio, click the pull button (downward arrow) in the git tab to pull the changes into your local directory
