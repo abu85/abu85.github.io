@@ -24,7 +24,6 @@ website:
       - section: "genome visualization"
         contents:
           - genome_visualization.qmd
-        
 
 format: 
   html:
@@ -40,7 +39,6 @@ format:
     css: styles.css
     include-in-header:
       - file: github-corner.html
-# engine: knitr
 
 execute:
   freeze: auto
